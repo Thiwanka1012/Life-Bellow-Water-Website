@@ -1,0 +1,50 @@
+body{
+    background-image: url('../images/images/underwater.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180%;
+    width: 100%;
+    margin-top: 7%;
+}
+
+.background-image{
+    height: 100%; 
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.topic {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Poppins";
+}
+
+.click{
+    font-family: "Poppins";
+}
+
+.click:hover {
+    fill: rgb(51, 183, 227);
+    cursor: pointer;
+}
+
+.svg a {
+    pointer-events: visible;
+}
+
+.svg:focus {
+    outline: 2px solid blue; /* Change the outline style as needed */
+}
+
+.Arrow:hover{
+    transform: scale(1.4);
+}
+
+.Arrow{
+    margin-top: 20px;
+    margin-left: 20px;
+}

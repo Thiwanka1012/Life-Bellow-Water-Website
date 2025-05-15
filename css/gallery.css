@@ -1,0 +1,249 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size);
+    font-family: var(--font-style);
+    background-color: var(--bg-color);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Poppins" ,sans-serif;
+}
+
+.imageContainer img{
+    width: 99%;
+    height: 500px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+.imageContainer {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+}
+.intro h1{
+    position: absolute;
+    line-height: 1.5;
+    top: 15%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.translucent-box {
+    position: absolute;
+    top: 75%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+  
+.translucent-box p {
+    font-size: 25px; 
+    color: rgb(255, 255, 255);
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.image{
+    width: 270px;
+    height: 370px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 10px 10px 10px rgba(0.4,0.5,0.5,0.5);
+    transition: 0.5 ease-in-out;
+    margin: 20px;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.image:hover{
+    transform: translateY(20px);
+}
+
+.image::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 123, 176, 0.5), rgb(109, 208, 227));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 15px;
+}
+
+.image:hover::before{
+    opacity: 1;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+
+.info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.image:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.info h2{
+    margin: 0;
+}
+
+.info p{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.bttn{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #d0cdcd;
+    color: #4e4d4d;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.bttn:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;  
+    padding: 20px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background: aliceblue;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 1000;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+}
+
+.popup.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup img {
+    max-width: 50%;  
+    display: block; 
+    margin-bottom: 20px;
+    align-items: center;
+    
+}
+
+.popup #popTitle{
+    position: absolute;
+    font-size: 24px;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    width: 45%;
+    text-align: justify;
+    color: #0c0c0c;
+    font-family: var(--font-style);
+    
+}
+
+.popup #popText{
+    letter-spacing: 1px;
+    line-height: 22px;
+    font-size: 16px;
+    position: absolute;
+    right: 35px;
+    bottom: 90px;  
+    width: 40%;
+    text-align: justify;
+    color: #0b0b0b;
+    font-size: var(--font-size);
+    font-family: var(--font-style);
+}
+
+.popup a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #d0cdcd;
+    color: #4e4d4d;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    display: inline-block;
+}
+
+.popup a:hover {
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+
+:root {
+    --font-size: 16px;
+    --font-style: "Poppins"; 
+    --bg-color:  #E3E7E8; 
+}
+
+.Arrow:hover{
+    transform: scale(1.4);
+}
+.Arrow{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+  
+  

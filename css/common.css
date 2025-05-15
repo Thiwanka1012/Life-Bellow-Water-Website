@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar img{
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    left: 3%;
+}
+
+.header_logo img,
+.footer_logo img{
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+footer img {
+    width: 80px; /* Adjust this value as needed */
+    height: auto; /* This maintains aspect ratio */
+}
+
+.lgn button{
+    font-family: "Montserrat", sans-serif ;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding: 9px 25px;
+    background-color: #3da5bf;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+
+.lgn button:hover{
+    background-color: rgba(34, 98, 186, 0.8);
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-list li a,
+footer li a{
+    transition:all 0.3s ease 0s ;
+}
+
+.nav-list li a:hover,
+footer li a:hover{
+    color: #0888a9;
+}
+
+.navbar{
+    font-family: "Montserrat", sans-serif ;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #00093c,#2d0b00);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 20);
+    z-index: 1000;
+}
+ 
+.navbar ul{
+    list-style: none;
+}
+ 
+.navbar ul li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+ 
+.navbar ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(235, 222, 222);
+}
+
+footer{
+    font-family: "Montserrat", sans-serif ;
+    width: 100%;
+    background: linear-gradient(to right, #00093c,#2d0b00);
+    color: #fff;
+    padding: 20px 0px;
+    margin-top: auto;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 20);
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col{
+    flex-basis: calc(25% - 20 px);
+    padding: 10px;
+}
+
+@media (max-width : 768px){
+    .col{
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+footer .logo{
+    margin-bottom: 30px;
+}
+
+.logo h3{
+    margin-top: 15px;
+}
+
+#author{
+    margin-top: 20%;
+    
+}
+
+.col h3{
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+

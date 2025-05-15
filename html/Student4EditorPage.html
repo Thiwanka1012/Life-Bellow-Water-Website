@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student 4 Editor Page</title>
+    <link rel="icon" type="image" href="../logo/LBW2.jpg">
+    <link rel="stylesheet" href="../common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> <!--Link to popins font-->
+    <style>
+        html, body{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 2%;
+            height: 100%;
+            font-family: "Poppins";
+        }
+        header{
+            background-color: rgb(101, 172, 234);
+            padding-top: 1px;
+            padding-bottom: 1px;
+            font-size: 15px;
+            font-weight: bolder;
+            color: rgb(4, 4, 4);
+            margin-bottom: 20px;
+        }
+        .details{
+            margin-bottom: 20px;
+        }
+        .gallery, .sitemap, .content{
+            text-align: center;
+            background-color: rgb(163, 204, 239);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .gallery button,
+        .sitemap button,
+        .content button{
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: none;
+            color: black;
+            background-color: #3da5bf;
+            cursor: pointer;
+            padding: 9px 25px;
+            border: none;
+            border-radius: 50px;
+            transition: all 0.3s ease 0s;
+        }
+        .gallery button,
+        .sitemap button,
+        .content button a:hover{
+            background-color: rgba(34, 98, 186, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#toDown"><img src="../images/ScrollDown.png" alt="down arrow" style="top:100px" class="Arrow"></a>
+    <div id="toUp"></div>
+
+    <header>
+        <h1>Page editor</h1>
+    </header>
+
+    <hr style="margin-bottom: 20px;"/>
+    <div class="details">
+        <p>Name: M.Sapna Oshadhee </p>
+        <p>Role: Student 4</p>
+        <p>UoW ID: w2053204</p>
+        <p>The following pages were edited by me!</p>
+    </div>
+    <hr style="margin-bottom: 20px;"/>
+
+    <div class="gallery">
+        <h2>Gallery</h2>
+        <p>Created a gallery using HTML and CSS.</p>
+        <p>Added a hover effect on thumbnails to indicate that they're clickable</p>
+        <p>Used JavaScript to popup the extended deatails of the thumbnail.</p>
+        <p>Used JavaScript to provide users with the ability to customize the colour scheme and font within the extended view for enhanced 
+            personalization.</p>
+        <br>
+        <a href="gallery.html"><button>Link to gallery</button></a>
+    </div>
+
+    <div class="sitemap">
+        <h2>Site Map</h2>
+        <p>Sitemap developed using SVG.</p>
+        <p>Added a hover effect on each node.</p>
+        <p>Each node links to the corresponding page it represents.</p>
+        <br>
+        <a href="sitemap.html"><button>Link to sitemap</button></a>
+    </div>
+
+    <div class="content">
+        <h2>Content Page</h2>
+        <p> Created a page with a brief description and key points using HTML and CSS.</p>
+        <p> Used CSS to style the web page.</p>
+        <p> Added zoom on hover effect to the paragraphs using CSS.</p>
+        <br>
+        <a href="contentpage4.html"><button>Link to content page</button></a>
+    </div>
+
+    <a href="#toUp"><img src="../images/ScrollUp.png" alt="up arrow" style="top:595px" class="Arrow"></a>
+    <div id="toDown"></div>
+
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="icon" type="image" href="../logo/LBW2.jpg">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> <!--Link to popins font-->
+</head>
+
+<body>
+
+   <!-- Navigation Bar -->
+   <div class="navbar">
+        <div class="header_logo">
+            <img src="../logo/LBW2.jpg" alt="Header Logo">
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">About us</a></li>
+            </ul>
+        </nav>
+        <a class="lgn" href="profile.html"><button>User Profile</button></a>
+    </div>
+    <!---->
+
+    <div id="toUp"></div>
+    
+    <div class="imageContainer">
+        <img src="../images/images/gallerypic.jpg" alt="gallery pic">
+        <div class="intro">
+            <h1>Welcome to Our Gallery...</h1>
+            <div class="translucent-box">
+                <p>Dive into a World Beyond: Explore Our Underwater Wonderland!</p>
+            </div>
+        </div>
+    </div> 
+
+    <a href="#toDown"><img src="../images/ScrollDown.png" alt="down arrow" style="top:100px" class="Arrow"></a>
+    
+    
+    <div class="gallery">
+        <label for="fontSizeSelect">Select Font Size: </label>
+        <select id="fontSizeSelect">
+            <option value="12">12px</option>
+            <option value="14">14px</option>
+            <option value="16">16px</option>
+            <option value="18">18px</option>
+        </select>
+
+        <label for="fontStyleSelect">Font Style: </label>
+        <select id="fontStyleSelect">
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Times New Roman">Times New Roman</option>
+        </select>
+
+        <label for="bgColorPicker">Background Color: </label>
+        <input type="color" id="bgColorPicker" value="#E3E7E8">
+        <script src="../Js/gallery.js"></script>
+        
+        <div class="container" id="blur">
+            <div class="image" onclick="toggle(event, 'popup1', '../images/images/Jellyfish.jpg')">
+                <img src="../images/images/Jellyfish.jpg" alt="img1">
+                <div class="info">
+                    <h2>JELLY FISH:</h2>
+                    <p>Jellyfish are gelatinous marine creatures with stinging tentacles,...</p>
+                    <a href="#" class="bttn">Read More</a>
+                </div>
+            </div>
+            <div class="image" onclick="toggle(event, 'popup2', '../images/images/Seaurchin.jpg')">
+                <img src="../images/images/Seaurchin.jpg" alt="img2">
+                <div class="info">
+                    <h2>SEA URCHIN:</h2>
+                    <p>Sea urchins are marine creatures with spherical bodies...</p>
+                    <a href="#" class="bttn">Read More</a>
+                </div>
+            </div>
+            <div class="image" onclick="toggle(event, 'popup3', '../images/images/Dolphines.jpg')">
+                <img src="..\images\images\Dolphines.jpg" alt="img3">
+                <div class="info">
+                    <h2>DOLPHINES:</h2>
+                    <p>Dolphins are highly intelligent marine mammals known for their...</p>
+                    <a href="#" class="bttn">Read More</a>
+                </div>
+            </div>
+            <div class="image" onclick="toggle(event, 'popup4', '../images/images/StarFish.jpg')">
+                <img src="..\images\images\StarFish.jpg" alt="img4">
+                <div class="info">
+                    <h2>STAR FISH:</h2>
+                    <p>Starfish, or sea stars, are marine creatures with...</p>
+                    <a href="#" class="bttn">Read More</a>
+                </div>
+            </div>
+        </div> 
+        <div class="container" id="blur" style="display: flex;">
+            <div class="image" onclick="toggle(event, 'popup5', '../images/images/Octopus.jpg')">
+                <img src="..\images\images\Octopus.jpg" alt="img5">
+                <div class="info">
+                    <h2>OCTOPUS:</h2>
+                    <p>The octopus is a highly intelligent marine mollusk with...</p>
+                    <a href="#" class="bttn">Read More</a>
+                </div>
+            </div>
+            <div class="image" onclick="toggle(event, 'popup6', '../images/images/SeaTurtle.jpg')">
+                <img src="..\images\images\SeaTurtle.jpg" alt="img6">
+                <div class="info">
+                    <h2>SeaTurtle:</h2>
+                    <p>Sea turtles are large marine reptiles known for their...</p>
+                    <a href="#" class="bttn">Read More</a>
+                </div>
+            </div>
+            <div class="image" onclick="toggle(event, 'popup7', '../images/images/Coralreefs.jpeg')">
+                <img src="..\images\images\Coralreefs.jpeg" alt="img7">
+                <div class="info">
+                    <h2>CORAL REEFS:</h2>
+                    <p>Coral reefs, built by tiny coral polyps, are vibrant ecosystems...</p>
+                    <a href="#" class="bttn">Read More</a>
+                </div>
+            </div>  
+            <div class="image" onclick="toggle(event, 'popup8', '../images/images/Seahorse.jpg')">
+                <img src="..\images\images\Seahorse.jpg" alt="img8">
+                <div class="info">
+                    <h2>SEA HORSE:</h2>
+                    <p>Seahorses, with their horse-like appearance, inhabit coastal waters worldwide,...</p>
+                    <a href="#" class="bttn">Read More</a>
+                </div>
+            </div>      
+        </div> 
+    
+
+        <div id="popup1" class="popup">
+            <img id="popupImage" src="../images/images/Jellyfish.jpg" alt="Popup Image">
+            <h2 id="popTitle">JELLY FISH:</h2>
+            <p id="popText">Jellyfish are gelatinous marine creatures with stinging tentacles, belonging to the phylum Cnidaria. They drift with ocean currents, feeding on small fish and plankton.<br/><br/> Their venomous tentacles serve for both defense and prey capture. While crucial to marine ecosystems, their populations are increasing, posing challenges due to factors like overfishing and climate change.</p>
+            <a href="#" onclick="toggle(event, 'popup1')" class="bttn">Close</a>
+        </div>
+
+
+        <div id="popup2" class="popup">
+            <img id="popupImage" src="../images/images/Seaurchin.jpg" alt="Popup Image">
+            <h2 id="popTitle">SEA URCHIN:</h2>
+            <p id="popText">Sea urchins are marine creatures with spherical bodies covered in sharp spines. They inhabit oceans globally, grazing on algae and organic matter in rocky areas and coral reefs.<br><br> With a specialized feeding structure called Aristotle's lantern, they scrape algae from surfaces. Reproducing sexually, they release eggs and sperm into the water. They play crucial roles as grazers in marine ecosystems, but overpopulation can lead to ecosystem degradation.</p>
+            <a href="#" onclick="toggle(event, 'popup2')" class="bttn">Close</a>
+        </div>
+
+
+        <div id="popup3" class="popup">
+            <img id="popupImage" src="../images/images/Dolphines.jpg" alt="Popup Image">
+            <h2 id="popTitle">DOLPHINES:</h2>
+            <p id="popText">Dolphins are highly intelligent marine mammals known for their playful behavior and sleek bodies. They communicate through vocalizations and form social groups called pods.<br/><br/> Dolphins are carnivores, feeding on fish, squid, and crustaceans. Threats to dolphins include habitat destruction, pollution, and bycatch in fishing gear. Conservation efforts are vital for their protection.</p>
+            <a href="#" onclick="toggle(event, 'popup3')" class="bttn">Close</a>
+        </div>
+
+
+        <div id="popup4" class="popup">
+            <img id="popupImage" src="../images/images/StarFish.jpg" alt="Popup Image">
+            <h2 id="popTitle">STAR FISH:</h2>
+            <p id="popText">Starfish, or sea stars, are marine creatures with radial symmetry and distinctive arms. They come in various sizes and colors, with around 2,000 species known.<br/><br/> Starfish use tube feet for movement and prey capture. They feed by evertng their stomach to digest prey externally. Starfish play a vital role in marine ecosystems as predators and prey. They can regenerate lost limbs, and their unique appearance makes them popular subjects of scientific study and fascination.</p>
+            <a href="#" onclick="toggle(event, 'popup4')" class="bttn">Close</a>
+        </div>
+
+
+        <div id="popup5" class="popup">
+            <img id="popupImage" src="../images/images/Octopus.jpg" alt="Popup Image">
+            <h2 id="popTitle">OCTOPUS:</h2>
+            <p id="popText">The octopus is a highly intelligent marine mollusk with eight arms lined with suction cups. It's known for its camouflage abilities and complex behaviors, including problem-solving.<br/><br/> Octopuses are carnivorous, feeding on various marine organisms. Threats to octopuses include overfishing, habitat destruction, and pollution, highlighting the need for conservation efforts.</p>
+            <a href="#" onclick="toggle(event, 'popup5')" class="bttn">Close</a>
+        </div>
+
+
+        <div id="popup6" class="popup">
+            <img id="popupImage" src="../images/images/SeaTurtle.jpg" alt="Popup Image">
+            <h2 id="popTitle">SEA TURTLE:</h2>
+            <p id="popText">Sea turtles are large marine reptiles known for their streamlined shells and graceful swimming. They feed on seagrasses, algae, and marine organisms.<br/><br/> Sea turtles undertake remarkable migrations and return to nesting beaches to lay eggs. Threats include habitat loss, pollution, and accidental capture in fishing gear, highlighting the need for conservation efforts.</p>
+            <a href="#" onclick="toggle(event, 'popup6')" class="bttn">Close</a>
+        </div>
+
+        <div id="popup7" class="popup">
+            <img id="popupImage" src="../images/images/Coralreefs.jpeg" alt="Popup Image">
+            <h2 id="popTitle">CORAL REEFS:</h2>
+            <p id="popText">Coral reefs, built by tiny coral polyps, are vibrant ecosystems supporting diverse marine life. They offer critical services like coastal protection and fisheries support.<br/><br/> Threats such as climate change and pollution endanger their survival. Conservation measures, including marine protection and sustainable practices, are essential for their preservation and the well-being of marine ecosystems and coastal communities.</p>
+            <a href="#" onclick="toggle(event, 'popup7')" class="bttn">Close</a>
+        </div>
+
+        <div id="popup8" class="popup">
+            <img id="popupImage" src="../images/images/Seahorse.jpg" alt="Popup Image">
+            <h2 id="popTitle">SEA HORSE:</h2>
+            <p id="popText">Seahorses, with their horse-like appearance, inhabit coastal waters worldwide, often among seagrass beds or coral reefs. Their unique reproductive behavior involves males carrying and incubating eggs in a pouch.<br/><br/> Despite their charm, seahorses face threats from habitat destruction, overfishing, and trade. Conservation is vital to safeguard these charismatic creatures and their habitats.</p>
+            <a href="#" onclick="toggle(event, 'popup8')" class="bttn">Close</a>
+        </div>
+    </div>
+
+    <a href="#toUp"><img src="../images/ScrollUp.png" alt="up arrow" style="top:595px" class="Arrow"></a>
+    <div id="toDown"></div>
+
+    <!-- Footer ------------------------------------------------------------------>
+    <footer>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-YUvqNsAs/p1MlgqX16WzIqjlFLyijf8+D6cJ7j0/f/zXT0V5bKZum2Wu9BfUJiJW" crossorigin="anonymous">
+        <div class="row">
+            <div class="col">
+                <div class="footer_logo">
+                    <img src="../logo/LBW2.jpg" alt="Footer Logo">
+                </div>
+                <p id="author"><a href="Student4EditorPage.html" style="color: white;" onmouseover="this.style.color='darkblue'" onmouseout="this.style.color='white'" target="_blank">Page Editor - Sapna Oshadhee</a>
+                <!-- <div class="social-media">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div> -->
+            </div>
+            <div class="col">
+                <h3>Contact us</h3>
+                <p>Sri Lanka Agency for International Development</p>
+                <p>Colombo,</p>
+                <p>Sri Lanka</p>
+                <p class="email-id">slaid@sl.org</p>
+                <h4>+94 71 - 234 5678</h4>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">About us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

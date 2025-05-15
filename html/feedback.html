@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Life Below Water</title>
+        <link rel="icon" type="image" href="../logo/LBW2.jpg">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/feedback.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> <!--Link to popins font-->
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="header_logo">
+                <img src="../logo/LBW2.jpg" alt="Header Logo">
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">About us</a></li>
+                </ul>
+            </nav>
+            <a class="lgn" href="profile.html"><button>User Profile</button></a>
+        </div>
+        <!---->
+
+        <a href="#toDown"><img src="../images/ScrollDown.png" alt="down arrow" style="margin-top: 100px;" class="Arrow"></a>
+        <div id="toUp"></div>
+
+        <div class="form_container">
+            <form>
+                
+                <h2>Feedback Form</h2>
+
+                <div class="form-group">
+                    <label for="name">Enter your name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Name Here" size="20" required><br><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email Here" size="20" required><br><br>
+                </div>
+
+                <div class="form-group">
+                    <label for="web_site_visiting">Was this your first time visiting?</label><br><br>
+
+                    <div class="radio-container">
+                        <input type="radio" id="first_time_yes" name="first_time_choice" value="Yes">
+                        <label for="first_time_yes">Yes</label>
+                        <span class="checkmark"></span>
+                    </div>
+
+                    <div class="radio-container">
+                        <input type="radio" id="first_time_no" name="first_time_choice" value="No">
+                        <label for="first_time_no">No</label>
+                        <span class="checkmark"></span>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="website_information">Was this website information and easy to navigate through?</label><br><br>
+
+                    <div class="radio-container">
+                        <input type="radio" id="info_yes" name="info_choice" value="Yes">
+                        <label for="info_yes">Yes</label>
+                        <span class="checkmark"></span>
+                    </div>
+
+                    <div class="radio-container">
+                        <input type="radio" id="info_no" name="info_choice" value="No">
+                        <label for="info_no">No</label>
+                        <span class="checkmark"></span>
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="improvements">If "No", suggest any improvements for the future:</label><br><br>
+                    <textarea id="improvements" name="improvements" rows="4" cols="50" placeholder="Add your message here..."></textarea><br><br>
+                </div>
+                
+                <div class="star_container">
+                    <h3 class="star_rating_heading">Give Us a Rating</h3>
+                    <div class="star_container">
+                        <div class="star_rating">
+                            <button class="star">&#9734;</button>
+                            <button class="star">&#9734;</button>
+                            <button class="star">&#9734;</button>
+                            <button class="star">&#9734;</button>
+                            <button class="star">&#9734;</button>
+                            <p class="star_current_rating">0 of 5</p>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="form-group">
+                    <div class="recommendation">
+                        <label for="recommendation">Would you recommend our services?</label><br><br>
+
+                        <div class="radio-container">
+                            <input type="radio" id="recommendation_yes" name="recommendation_choice" value="Yes">
+                            <label for="recommendation_yes">Yes</label>
+                            <span class="checkmark"></span>
+                        </div>
+
+                        <div class="radio-container">
+                            <input type="radio" id="recommendation_no" name="recommendation_choice" value="No">
+                            <label for="recommendation_no">No</label>
+                            <span class="checkmark"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="offers">Would you like to receive updates about the website and any offers?</label><br><br>
+                    <select id="offers" name="offers" required>
+                        <option value="" disabled selected>Select Option</option>
+                        <option value="via-email" >Email</option>
+                        <option value="via-facebook">Facebook</option>
+                        <option value="via-twitter">Twitter</option>
+                        <option value="via-message">Message</option>
+                    </select><br><br>
+                </div>
+
+                <div class="form-group">
+                    <div id="email_field" class="hidden">
+                        <label for="email">Enter your Email Address:</label><br><br>
+                        <input type="email" id="email" name="email" placeholder="Enter Email here" required><br><br>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div id="facebook_field" class="hidden">
+                        <label for="facebook">Enter your Facebook Account (Link or Name):</label><br><br>
+                        <input type="text" id="facebook" name="facebook" placeholder="Enter Account details here" required><br><br>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div id="twitter_field" class="hidden">
+                        <label for="email">Enter your Twitter Account (Link or Name):</label><br><br>
+                        <input type="text" id="twitter" name="twitter" placeholder="Enter Account details here" required><br><br>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div id="message_field" class="hidden">
+                        <label for="message">Enter your Mobile number:</label><br><br>
+                        <input type="tel" id="message" name="message" placeholder="(07x)-xxx xxxx"><br><br>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="questions">Do you have any additional questions or requests?</label><br><br>
+                    <textarea id="questions" name="questions" rows="4" cols="50" placeholder="Add your message here..."></textarea><br>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
+        </div>
+
+        <a href="#toUp"><img src="../images/ScrollUp.png" alt="up arrow" style="top:595px" class="Arrow"></a>
+        <div id="toDown"></div>
+
+    <!-- Footer -->
+    <footer>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-YUvqNsAs/p1MlgqX16WzIqjlFLyijf8+D6cJ7j0/f/zXT0V5bKZum2Wu9BfUJiJW" crossorigin="anonymous">
+        <div class="row">
+            <div class="col">
+                <div class="footer_logo">
+                    <img src="../logo/LBW2.jpg" alt="Footer Logo">
+                </div>
+                <p id="author"><a href="Student2EditorPage.html" style="color: white;" onmouseover="this.style.color='darkblue'" onmouseout="this.style.color='white' " target="_blank">Page Editor - Sandali Tissera</a>
+                <!-- <div class="social-media">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div> -->
+            </div>
+            <div class="col">
+                <h3>Contact us</h3>
+                <p>Sri Lanka Agency for International Development</p>
+                <p>Colombo,</p>
+                <p>Sri Lanka</p>
+                <p class="email-id">slaid@sl.org</p>
+                <h4>+94 71 - 234 5678</h4>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a href="../home.html">Home</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">About us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+        <script>
+            const infoNo = document.getElementById('info_no');
+            const improvementsTextarea = document.getElementById('improvements');
+        
+            infoNo.addEventListener('change', function() {
+                improvementsTextarea.required = this.checked;
+            });
+
+            const offersSelect = document.getElementById('offers');
+            const emailField = document.getElementById('email_field');
+            const facebookField = document.getElementById('facebook_field');
+            const twitterField = document.getElementById('twitter_field');
+            const messageField = document.getElementById('message_field');
+
+            const allstars = document.querySelectorAll('.star');
+            let current_rating = document.querySelector('.star_current_rating');
+
+            allstars.forEach((star, i) => {
+            star.onclick = function() {
+                let current_star_level = i + 1;
+                current_rating.innerText = `${current_star_level} of 5`;
+                allstars.forEach((star, j) => {
+                    if (current_star_level >= j + 1) {
+                        star.innerHTML = '&#9733';
+                    } else {
+                        star.innerHTML = '&#9734';
+                    }
+                    })
+                }
+            });
+
+            offersSelect.addEventListener('change', function() {
+            const selectedValue = this.value;
+            
+            if (selectedValue === 'via-email') {
+                emailField.classList.remove('hidden');
+                facebookField.classList.add('hidden');
+                twitterField.classList.add('hidden');
+                messageField.classList.add('hidden');
+            } else if (selectedValue === 'via-facebook') {
+                emailField.classList.add('hidden');
+                facebookField.classList.remove('hidden');
+                twitterField.classList.add('hidden');
+                messageField.classList.add('hidden');
+            } else if (selectedValue === 'via-twitter') {
+                emailField.classList.add('hidden');
+                facebookField.classList.add('hidden');
+                twitterField.classList.remove('hidden');
+                messageField.classList.add('hidden');
+            }else if (selectedValue === 'via-message') {
+                emailField.classList.add('hidden');
+                facebookField.classList.add('hidden');
+                twitterField.classList.add('hidden');
+                messageField.classList.remove('hidden');
+            } else {
+                // Hide both fields if no option selected or other option chosen
+                emailField.classList.add('hidden');
+                facebookField.classList.add('hidden');
+                twitterField.classList.add('hidden');
+                messageField.classList.add('hidden');
+            }
+            });
+            // Get the current page URL
+            const currentPage = window.location.pathname.split('/').pop();
+
+            // Get all the navigation links
+            const navLinks = document.querySelectorAll('.nav-list');
+
+            // Loop through the links and check if their 'href' matches the current page URL
+            for (const link of navLinks) {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active'); // Add 'active' class to the matching link
+                    break; // Exit the loop if theres an active link
+                }
+            }
+
+            //validatig the name input field
+            function validateName(event) {
+                const nameInput = event.target;
+                const nameError = document.getElementById("nameError");
+                const nameRegex = /^[A-Za-z]+$/; //  allow only letters
+
+                if (!nameRegex.test(nameInput.value)) {
+                    nameInput.setCustomValidity("Please enter a valid name with letters only.");
+                    nameError.textContent = "Please enter a valid name with letters only.";
+                } else {
+                    nameInput.setCustomValidity("");
+                    nameError.textContent = "";
+                }
+            }
+
+            function submitForm(event) {
+                event.preventDefault();
+                alert("Thanks for you valubale time. We highly appreciate your feedback!");
+
+                // Constructing the mailto link
+                const emailLink = `mailto:sandali.20230700@iit.ac.lk?subject=Feedback&body=${encodedEmailBody}` ;
+
+                // Redirecting to the email client
+                window.location.href = emailLink;
+            }
+            
+        </script>
+
+    </body>
+</html>

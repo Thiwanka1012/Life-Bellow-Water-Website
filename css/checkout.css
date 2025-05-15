@@ -1,0 +1,137 @@
+/* CSS styles for the Checkout page */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+  
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(80vh - 40px); /* Adjusting height */
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(70vh - 40px); /* Adjusting height */
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 10px); /* Adjusting height */
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.required {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: #555;
+}
+
+/*order summery css*/
+
+/* Styles for the order summary section */
+
+.order-summary {
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: auto; /* Adjusting height */
+  width: 40%;
+}
+
+.order-summary h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.order-summary div {
+  margin-bottom: 10px;
+  display: flex; /* Use flexbox to align items */
+  justify-content: space-between; /* Align items with equal space between them */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.order-summary span:first-child {
+  text-align: left; /* Align item names to the left */
+  flex-basis: 50%; /* Set the width of the item name to 50% */
+}
+
+.order-summary span:nth-child(2),
+.order-summary span:nth-child(3) {
+  flex: 1; /* Distribute available space equally among prices and quantities */
+}
+
+.order-summary p {
+  margin: 0;
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 40px;
+}
+
+
+
+  

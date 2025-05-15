@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> <!--Link to popins font-->
+    <link rel="icon" type="image" href="../logo/LBW2.jpg">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="navbar">
+    <div class="header_logo">
+        <img src="../logo/LBW2.jpg" alt="Header Logo">
+    </div>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="sitemap.html">Site Map</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="team.html">About us</a></li>
+        </ul>
+    </nav>
+    <a class="lgn" href="profile.html"><button>User Profile</button></a>
+</div>
+<!---->    
+<div class="start" style="text-align: center">
+    <a class="start-btn" id="start-btn" href="#">Start</a>
+</div>
+<div class="container" id="main-container">
+    <div style="margin-bottom: 10px;">
+        <span id="spn-btn">Personal details For Ocean ID | Question 1/13</span>
+    </div>
+    <div>
+        <p style="display: inline-block; vertical-align: top; margin-top: 50px; width: 20%" id="prompt-btn">
+            Prompt:
+        </p>
+        <div class="mini-container">
+            <p class="name-btn" id="name-btn">Your Name</p>
+            <input type="text" id="name" style="width: 100%;">
+        </div>
+    </div>
+
+    <div style="text-align: center">
+        <button id="next-btn">Next</button>
+        <button id="skip-btn">Skip</button>
+    </div>
+</div>
+<div class="container" id="output-container">
+    <div>
+        <p style="display: inline-block; vertical-align: top; margin-top: 20px; width: 20%">
+            Output
+        </p>
+        <div class="mini-container">
+            <label id="dynamicLabel"></label>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Progress Bar-->
+
+<div class="progress-container">
+    <div class="progress-bar" id="progress-bar"></div>
+</div>    
+
+
+
+<script src="../Js/profile.js"></script>
+<!-- Footer -->
+<footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-YUvqNsAs/p1MlgqX16WzIqjlFLyijf8+D6cJ7j0/f/zXT0V5bKZum2Wu9BfUJiJW" crossorigin="anonymous">
+    <div class="row">
+        <div class="col">
+            <div class="footer_logo">
+                <img src="../logo/LBW2.jpg" alt="Footer Logo">
+            </div>
+            <p id="author"><a href="Student3EditorPage.html" style="color: white;" onmouseover="this.style.color='darkblue'" onmouseout="this.style.color='white' " target="_blank">Page Editor - Thiwanka Umesh</a>
+            <!-- <div class="social-media">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div> -->
+        </div>
+        <div class="col">
+            <h3>Contact us</h3>
+            <p>Sri Lanka Agency for International Development</p>
+            <p>Colombo,</p>
+            <p>Sri Lanka</p>
+            <p class="email-id">slaid@sl.org</p>
+            <h4>+94 71 - 234 5678</h4>
+        </div>
+        <div class="col">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">About us</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

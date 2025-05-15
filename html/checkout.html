@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="icon" type="image" href="../logo/LBW2.jpg">
+  <link rel="stylesheet" href="../css/checkout.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+  <header>
+    <h1 id="checkOut">Checkout</h1>
+  </header>
+  
+  <div class="order-summary">
+    <!-- Order summary content will be added dynamically by JavaScript -->
+  </div>
+  <div class="container">
+    <form id="checkout-form">
+      <h2>Contact Details</h2>
+      <div class="form-group">
+        <label for="name">First Name<span class="required">*</span>:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="surname">Surname<span class="required">*</span>:</label>
+        <input type="text" id="surname" name="surname" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email<span class="required">*</span>:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phonenumber">Phone Number<span class="required">*</span>:</label>
+        <input type="text" id="phonenumber" name="phonenumber" required></textarea>
+      </div>
+      
+      <div id="validation-message" class="hidden">Please fill in all required fields correctly.</div>
+      <button type="reset">Clear Fields</button>
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+  <div class="container2">
+     <!-- Credit card information form -->
+     <form id="credit-card-form">
+      <h2>Credit Card Information</h2>
+      <div class="form-group">
+        <label for="card-number">Card Number<span class="required">*</span>:</label>
+        <input type="text" id="card-number" name="card-number" required>
+      </div>
+      <div class="form-group">
+        <label for="card-name">Card Holder's Name<span class="required">*</span>:</label>
+        <input type="text" id="card-name" name="card-name" required>
+      </div>
+      <div class="form-group">
+        <label for="expiry-date">Expiry Date<span class="required">*</span>:</label>
+        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YYYY" required>
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV<span class="required">*</span>:</label>
+        <input type="text" id="cvv" name="cvv" required>
+      </div>
+      <div id="validation-message" class="hidden">Please fill in all required fields correctly.</div>
+      <button type="reset">Clear Fields</button>
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+  <div class="container3">
+    <!-- Address information form -->
+    <form id="address-form">
+     <h2>Billing Adress</h2>
+     <div class="form-group">
+       <label for="line1">Adress Line 1<span class="required">*</span>:</label>
+       <input type="text" id="line1" name="line1" required>
+     </div>
+     <div class="form-group">
+       <label for="line2">Adress Line 2:</label>
+       <input type="text" id="line2" name="line2">
+     </div>
+     <div class="form-group">
+       <label for="line3">Adress Line 3:</label>
+       <input type="text" id="line3" name="line3">
+     </div>
+     <div class="form-group">
+       <label for="town">Town / City<span class="required">*</span>:</label>
+       <input type="text" id="town" name="town" required>
+     </div>
+     <div class="form-group">
+       <label for="postal">Postal Code<span class="required">*</span>:</label>
+       <input type="number" id="postal" name="postal" required>
+     </div>
+     <div class="form-group">
+      <label for="country">country<span class="required">*</span>:</label>
+      <input type="text" id="country" name="country" required>
+    </div>
+     <div id="validation-message" class="hidden">Please fill in all required fields correctly.</div>
+     <button type="reset">Clear Fields</button>
+     <button type="submit">Purchase Items</button>
+   </form>
+ </div>
+  
+  <script src="../Js/checkout.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>

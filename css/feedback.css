@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background: url('../images/images 2/water_world.jpeg');
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.form_container {
+    max-height: 1500px;
+    max-width: 550px;
+    margin: -20px auto ;
+    background-color: #d4d0d0e7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.form_container h2{
+    font-size: x-large;
+    font-family: "Poppins";
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(25, 132, 219);
+}
+
+.form-group{
+    margin-bottom: 20px;
+    font-family: "Poppins";
+}
+
+.hidden {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.form-group label,
+.hidden label{
+    font-weight: bold;
+}
+
+.form-group input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea,
+.hidden input[type="email"],
+.hidden input[type="text"]{
+    background-color: rgb(231, 233, 236);
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group textarea {
+    height: 100px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#offers{
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(231, 233, 236);
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.radio-container {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between radio options */
+    cursor: pointer; /* Style cursor on hover */
+}
+
+
+.checkmark {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%; /* Create a circular shape */
+    border: 2px solid #ccc; /* Border for the unchecked state */
+    background-color: #fff; /* Background color for the unchecked state */
+}
+
+.radio-container:hover input ~ .checkmark {
+    background-color: #ccc; /* Change background color on hover */
+}
+
+.radio-container input:checked ~ .checkmark {
+    background-color: #0056b3; /* Background color for the checked state */
+    border-color: #0056b3; /* Change border color for the checked state */
+}
+
+.star_container h3{
+    padding: 0px 0px 0px 0px;
+    margin-bottom: -60px ;
+    margin-top: -80px;
+}
+
+.star_container {
+    justify-content: center;
+    height: 0px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 0rem;
+    margin: auto;
+    border-radius: .9rem;
+}
+
+.star_rating {
+    padding: 0; /* Remove the horizontal padding */
+    margin-top: -20px; /* Remove the vertical margin */
+    padding-bottom: 0;
+}
+
+.star_current_rating{
+    margin-top: -2px;
+    font-weight: bold;
+}
+
+.star {
+    font-size: 3rem;
+    color: rgb(25, 132, 219);
+    background-color: unset;
+    border: none;
+}
+
+.star:hover {
+    cursor: pointer;
+}
+
+.recommendation{
+    margin-top: -120px;
+}
+.Arrow{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.Arrow:hover{
+    transform: scale(1.4);
+}
